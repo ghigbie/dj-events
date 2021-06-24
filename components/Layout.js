@@ -1,6 +1,7 @@
 import Head from 'next/head';
+import styles from '../styles/Layout.module.css';
 
-export const Layout = ({title, keywords, description, children}) => {
+const Layout = ({title, keywords, description, children}) =>{
     return (
         <div>
             <Head>
@@ -26,3 +27,5 @@ Layout.defaultProps = {
     description: 'Find the latest DJ and other musical events',
     keywords: 'music, dj, edm, events',
 }
+
+export default Layout;
