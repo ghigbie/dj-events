@@ -1,8 +1,11 @@
-export default EventPage= () => {
+import Layout from '../../components/Layout';
+
+const EventPage = () => {
     return (
-        <div>
-            <h1>My Event</h1>
-            <h3>{ router.query.slug }</h3>
-        </div>
+        <Layout>
+            <h1>Unique Event</h1>
+        </Layout>
     )
  }
+
+ export default EventPage
